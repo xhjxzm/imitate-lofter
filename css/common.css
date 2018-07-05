@@ -1,0 +1,65 @@
+*{ margin:0; padding:0; border:0; }
+body{ font-family: Arial, "Hiragino Sans GB","PingFang SC","Microsoft YaHei", "微软雅黑"; font-size:12px; line-height:24px; background:#fff;  color:#444; }
+input,textarea{ resize:none; font-family:"Microsoft YaHei"; background: #fff; border: 0;  }
+img{ border:none; vertical-align:middle; width: 100%;}
+ul,li,ol{ list-style:none;}
+a{ text-decoration:none; color:#444; outline:none; cursor: pointer;}
+input:focus,textarea:focus,button:focus{ outline:none; }
+b,strong{ font-weight:normal;}
+i,em{ font-style:normal;}
+h1,h2,h3,h4,h5,h6{ font-weight:normal;}
+.fl{ float:left;}
+.fr{ float:right;}
+.clearfix:after { content: ""; display: block; clear: both; }
+.mainbox{ width:930px; margin:0 auto;}
+body{ width:100%; background:#ededef; position: relative;}
+
+
+/*字体图标样式*/
+i { display: inline-block; }
+i.icon-down-dir { color: #999; display: inline; }
+i.icon-search { color: #999; font-size: 16px; position: absolute; left: 10px; top:43px;}
+i.icon-search:hover { color: #bbb; }
+i.icon-up-open { color: #EEEEEF; position: fixed; top: 80%; right: 0; font-size: 30px; width: 50px; height: 50px; text-align: center; line-height: 50px; background: #ADACA9;}
+
+
+/*头部样式*/
+header { background: #24292C; height: 82px; line-height: 82px;}
+header .logo { margin-right: 55px; }
+header .mainnav { position: relative; }
+header .mainnav>li { float: left; position: relative; margin-right: 35px; padding-top: 10px; height: 72px;}
+header .mainnav>li.more { color: #999; font-size: 16px; margin-right: 0;}
+header .mainnav>li>a { color: #999; font-size: 16px; }
+header .mainnav>li.active>a,header .mainnav>li:hover>a,header .mainnav>li:hover i{ color: #fff; }
+header .mainnav>li.active:after { content: ""; width: 0; height: 0; border-left: 10px solid transparent; border-right: 10px solid transparent; border-bottom: 10px solid #EDEDEF; position: absolute; bottom: 0px; left: 6px;}
+
+header .mainnav>li:last-child { position: relative; }
+header .mainnav>li .morenav { position: absolute; left: -72px; top: 75px; width: 180px; background: #191919; z-index: 200; display: none;} 
+header .mainnav>li .morenav:before { content: ""; width: 0; height: 0; border-left: 8px solid transparent; border-right: 8px solid transparent; border-bottom: 8px solid #191919; position: absolute; top: -8px; left: 80px; }
+header .mainnav>li .morenav>li { height: 40px; line-height: 40px; }
+header .mainnav>li .morenav>li>a { color: #bcbcbc; display: block; padding: 0 20px; font-size: 12px;}
+header .mainnav>li .morenav>li>a:hover { color: #fff; background: rgba(188,188,188,0.2);}
+
+header #searchBox { position: relative; padding-top: 10px; height: 72px;}
+header #searchBox input[type='text']{ width: 142px; height: 30px; border-radius: 20px; background: #000; padding: 0 48px 0 40px; color: #888;}
+header #searchBox button { background: transparent; cursor: pointer;}
+header #searchBox .new { background: #999; color: #303539; width: 40px; height: 18px; border-radius:20px; display: inline-block; line-height: 18px; text-align: center; position: absolute; right: 5px; top: 41px;}
+
+header #searchBox .my_subscription { position: absolute; background: #191919; width: 230px; border-radius: 3px; top:70px; left: 5px; display: none; box-shadow: 0 2px 2px rgba(25,25,25,0.5);}
+header #searchBox .my_subscription .triangle { content: ""; width: 0; height: 0; border-left: 10px solid transparent; border-right: 10px solid transparent; border-bottom: 10px solid #191919; position: absolute; top: -10px; left: 105px;}
+header #searchBox .my_subscription h3 { color: #888; font-size: 12px; height: 40px; line-height: 40px; padding-left: 17px; }
+header #searchBox .my_subscription .subtag .tag a { height: 52px; border-bottom: 1px solid #0c0c0c; padding: 7px 10px 9px 17px; display: block; box-sizing: border-box;}
+header #searchBox .my_subscription .subtag .tag a:hover { background: rgba(188,188,188,0.2); transition: 0.3s;}
+header #searchBox .my_subscription .subtag .tag a .taginfo { float: left; }
+header #searchBox .my_subscription .subtag .tag a .taginfo>div { height: 18px; line-height: 18px; }
+header #searchBox .my_subscription .subtag .tag a .taginfo .tagname { color: #bcbcbc; font-size: 14px;}
+header #searchBox .my_subscription .subtag .tag a:hover .tagname { color: #fff; transition: 0.3s; }
+header #searchBox .my_subscription .subtag .tag a .taginfo .icon-tag { font-size: 12px; color: #888; margin-right: 5px; }
+header #searchBox .my_subscription .subtag .tag a .taginfo .num { color: #888; padding: 4px 0 0 22px; }
+header #searchBox .my_subscription .subtag .tag a .tagimg { width: 34px; height: 34px; float: right; line-height: 34px; }
+
+
+
+/*返回顶部按钮样式*/
+i.icon-up-open { display: none; }
+i.icon-up-open:hover { background: #777; }
